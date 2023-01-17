@@ -7,7 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
+        // when doing this you get it back as a string not object
         let companies = 
         `[
             {
@@ -25,7 +26,9 @@
             }
         ]`
 
+        // JSON.parse converts it to a object
         console.log(JSON.parse(companies)[0].name);
+
 
         /*try something like this tommorow for the classes*/
         /*{"employees":[
@@ -33,10 +36,18 @@
             { "firstName":"Anna", "lastName":"Smith" },
             { "firstName":"Peter", "lastName":"Jones" }
         ]}*/
+        // [] is creating an array
 
         /* to call into js
         do "fetch("".json)"*/
         
+    </script> -->
+
+    
+    <script type="text/javascript" src="test.json">
+        // How to connect js and json
+        var mytest = JSON.parse(test);
+        console.log(mytest[0].firstName);
     </script>
 </body>
 </html>
